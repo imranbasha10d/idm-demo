@@ -38,5 +38,5 @@ Body: {
 **To get user data from verid-api with auth check:** <br />
 POST: http://localhost:3000/getUser/{orgId} <br />
 Header: {
-    "Authorization": "Bearer {token}"
+    "Authorization": "Bearer {verid-token}"
 }
