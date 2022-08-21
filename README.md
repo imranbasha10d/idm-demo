@@ -10,33 +10,33 @@ docker exec -it some-redis bash
 npx lerna bootstrap
 
 # To run H-API:
-cd packages/HealixAPI/
-npm start
+ - cd packages/HealixAPI/
+ - npm start
 
 # To run V-API:
-cd packages/VeridAPI/
-npm start
+ - cd packages/VeridAPI/
+ - npm start
 
-Connected Healix API - http://localhost:4000
-Connected Verid API - http://localhost:3000
+**Connected Healix API - http://localhost:4000** <br />
+**Connected Verid API - http://localhost:3000** <br />
 
 # APIs:
-# To generate HMAC secret:
-POST: http://localhost:3000/generateHmacSecret
+**To generate HMAC secret:** <br />
+POST: http://localhost:3000/generateHmacSecret <br />
 Body: {
     "orgId": "{orgId}",
     "algorithm": "sha256"
 }
 
-# To generate verid token:
-POST: http://localhost:4000/generateVeridToken
-Body: {
+**To generate verid token:** <br />
+POST: http://localhost:4000/generateVeridToken <br />
+`` Body: {
     "orgId": "{orgId}",
     "username": "{username}"
-}
+} ``
 
-# To get user data from verid-api with auth check:
-POST: http://localhost:3000/getUser/{orgId}
+**To get user data from verid-api with auth check:** <br />
+POST: http://localhost:3000/getUser/{orgId} <br />
 Header: {
     "Authorization": "Bearer {token}"
 }
