@@ -30,10 +30,10 @@ Body: {
 
 **To generate verid token:** <br />
 POST: http://localhost:4000/generateVeridToken <br />
-`` Body: {
+Body: {
     "orgId": "{orgId}",
     "username": "{username}"
-} ``
+}
 
 **To get user data from verid-api with auth check:** <br />
 POST: http://localhost:3000/getUser/{orgId} <br />
